@@ -1,6 +1,13 @@
 {
+  "name": "conjuntos_test",
+  "version": "1.0.0",
+  "description": "conjuntos_test",
+  "main": "conjuntos.js",
   "dependencies": {
     "prompt-sync": "^4.2.0"
+  },
+  "scripts": {
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^29.2.2"
