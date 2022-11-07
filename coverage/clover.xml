@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1667831889762" clover="3.2.0">
+  <project timestamp="1667831889762" name="All files">
+    <metrics statements="38" coveredstatements="28" conditionals="5" coveredconditionals="1" methods="6" coveredmethods="5" elements="49" coveredelements="34" complexity="0" loc="38" ncloc="38" packages="1" files="1" classes="1"/>
+    <file name="conjuntos.js" path="C:\Users\Odinp\Desktop\ConjuntoswithTest\src\conjuntos.js">
+      <metrics statements="38" coveredstatements="28" conditionals="5" coveredconditionals="1" methods="6" coveredmethods="5"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="67" count="1" type="stmt"/>
+      <line num="68" count="6" type="stmt"/>
+      <line num="69" count="28" type="stmt"/>
+      <line num="71" count="6" type="stmt"/>
+      <line num="72" count="6" type="stmt"/>
+      <line num="76" count="1" type="stmt"/>
+      <line num="77" count="5" type="stmt"/>
+      <line num="78" count="22" type="stmt"/>
+      <line num="80" count="5" type="stmt"/>
+      <line num="81" count="5" type="stmt"/>
+      <line num="86" count="1" type="stmt"/>
+      <line num="87" count="1" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="89" count="1" type="stmt"/>
+      <line num="90" count="1" type="stmt"/>
+      <line num="91" count="1" type="stmt"/>
+      <line num="92" count="1" type="stmt"/>
+      <line num="93" count="1" type="cond" truecount="1" falsecount="4"/>
+      <line num="96" count="0" type="stmt"/>
+      <line num="99" count="0" type="stmt"/>
+      <line num="102" count="1" type="stmt"/>
+      <line num="103" count="1" type="stmt"/>
+      <line num="106" count="0" type="stmt"/>
+      <line num="107" count="0" type="stmt"/>
+      <line num="109" count="0" type="stmt"/>
+      <line num="110" count="0" type="stmt"/>
+      <line num="112" count="0" type="stmt"/>
+      <line num="113" count="0" type="stmt"/>
+      <line num="116" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

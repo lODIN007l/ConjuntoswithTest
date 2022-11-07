@@ -38,6 +38,7 @@ describe("Modulo Interseccion", () => {
       fun_Inerseccion([21, 22, 38, 44], new Set([44, 21, 38, 22, 44]))
     ).toEqual(new Set([21, 22, 38, 44]));
   });
+
   test("funcion Interseccion - cp3  ", () => {
     expect(fun_Inerseccion([1, 2, 3, 4, 5], new Set([6, 7, 8, 9, 10]))).toEqual(
       new Set([])
