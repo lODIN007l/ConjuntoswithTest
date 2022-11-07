@@ -3,9 +3,11 @@ const prompt = require("prompt-sync")({ sigint: true });
 ////////////////////////////////////////////////////////////////////////////
 
 const primerConjunto = new Set([1, 2, 3, 4, 5]);
-const segundoConjunto = new Set([4, 5, 6, 7, 8]);
-const elemetos = new Set(["a", "b", "c", "d", "e"]);
-const elemetos_2 = new Set(["a", "b", "c", "d", "e"]);
+const segundoConjunto = new Set([6, 7, 8, 9, 10]);
+// ({1,2,3,4,5},{4,7,8,9,10};
+const conVacio = new Set([]);
+const elemetos = new Set(["rosa", "tulipan", "girasol", "clavel"]);
+const elemetos_2 = new Set(["girasol", "rosa", "petunial"]);
 // const elements = [
 //   { name: "Javascript" },
 //   { name: "CSS" },
@@ -30,7 +32,7 @@ const elemetos_2 = new Set(["a", "b", "c", "d", "e"]);
 // ];
 ////////////////////////////////////////////////////////////////////////////
 // Union de Conjuntos
-fun_Union = () => {
+fun_Union = (primerConjunto, segundoConjunto, element, element_2) => {
   const setN = new Set([
     ...primerConjunto,
     ...segundoConjunto,
@@ -38,13 +40,31 @@ fun_Union = () => {
     // ...element_2,
     ...elemetos_2,
     ...elemetos,
+    // ...conVacio,
   ]);
-
+  // console.log(typeof setN);
   return setN;
 };
 
-//Interseccion de COnjuntos
-fun_Inerseccion = () => {
+//leer datos por consola y agregarlos a un array
+
+// fun_lectura = () => {
+//   let array = [];
+//   let i = 0;
+//   let n = prompt("Ingrese el numero de elementos del array: ");
+//   while (i < n) {
+//     array.push(prompt("Ingrese el elemento: "));
+//     i++;
+//   }
+//   console.log(array);
+//   return array;
+// };
+// fun_lectura();
+
+// //metodos
+
+// //Interseccion de COnjuntos
+fun_Inerseccion = (primerConjunto, segundoConjunto) => {
   const elementosComunes = [...primerConjunto].filter((element) =>
     segundoConjunto.has(element)
   );
@@ -52,17 +72,17 @@ fun_Inerseccion = () => {
   return setComunes;
 };
 
-//Resta de Conjuntos
-fun_Resta = () => {
+// //Resta de Conjuntos
+fun_Resta = (primerConjunto, segundoConjunto) => {
   const elementodDif = [...primerConjunto].filter(
     (element) => !segundoConjunto.has(element)
   );
   const resultadoResta = new Set(elementodDif);
   return resultadoResta;
 };
-//ejecucion
+// //ejecucion
 
-//menu inicio
+// //menu inicio
 fun_Inicio = () => {
   console.log("Escoja la operaciona realizar");
   console.log("1. Union de Conjuntos");
@@ -73,15 +93,17 @@ fun_Inicio = () => {
   switch (opcion) {
     case "1":
       // fun_Union();
-      console.log(fun_Union());
+      console.log(
+        fun_Union(primerConjunto, segundoConjunto, elemetos, elemetos_2)
+      );
       break;
     case "2":
       // fun_Inerseccion();
-      console.log(fun_Inerseccion());
+      console.log(fun_Inerseccion(primerConjunto, segundoConjunto));
       break;
     case "3":
       // fun_Resta();
-      console.log(fun_Resta());
+      console.log(fun_Resta(primerConjunto, segundoConjunto));
       break;
     case "4":
       console.log("Gracias por usar el programa");
@@ -93,6 +115,6 @@ fun_Inicio = () => {
 };
 fun_Inicio();
 
-//incorporar ingreso de los datos un metodo para llamarlo en eneral y que nos devuelva el array de los datos pedidos por consola
-//enviar los datos por parametros a las funciones para no esperar a que digitemos uno en si
-//tener en cuenta los casos de error en los conjuntos por definiicon en el documento de la pinchecha
+// //incorporar ingreso de los datos un metodo para llamarlo en general y que nos devuelva el array de los datos pedidos por consola
+// //enviar los datos por parametros a las funciones para no esperar a que digitemos uno en si
+// //tener en cuenta los casos de error en los conjuntos por definiicon en el documento de la pinchecha
