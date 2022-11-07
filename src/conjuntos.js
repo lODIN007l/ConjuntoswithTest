@@ -89,8 +89,8 @@ fun_Inicio = () => {
   console.log("2. Interseccion de Conjuntos");
   console.log("3. Resta de Conjuntos");
   console.log("4. Salir");
-  // let opcion = prompt("Ingrese la opcion: ");
-  let opcion = "2";
+  let opcion = prompt("Ingrese la opcion: ");
+  // let opcion = "2";
   switch (opcion) {
     case "1":
       // fun_Union();
